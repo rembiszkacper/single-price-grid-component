@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap");
+
+:root {
+  /* Primary */
+
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-gray);
+  font-family: "Karla";
+  font-size: 16px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 14px;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 2em;
+}
+
+.community {
+  grid-column: span 2;
+  padding: 40px;
+  padding-right: 24%;
+}
+.community > h1 {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 1.7em;
+}
+.community > h2 {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+.community > p {
+  color: var(--grayish-blue);
+  font-weight: 400;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.subscription {
+  background-color: var(--cyan);
+  padding: 30px 40px;
+}
+.subscription > h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.subscription > h2 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.6em;
+  margin-top: 20px;
+}
+.subscription > h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+.subscription > p {
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+.subscription > .sign-up {
+  color: white;
+  font-weight: 400;
+  font-size: 1em;
+  background-color: var(--bright-yellow);
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+span {
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 0.6em;
+}
+.why-us {
+  background-color: hsla(179, 62%, 43%, 0.74);
+  padding: 30px 40px;
+}
+.why-us > h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+ul {
+  margin-top: 10px;
+  list-style: none;
+}
+li {
+  color: var(--light-gray);
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
